@@ -1,0 +1,46 @@
+# ===== 商业敏感数据（原始销售流水，含真实客户名/价格，切勿提交）=====
+工作簿1.xlsx
+*.xlsx
+*.xls
+*.csv
+*.parquet
+*.feather
+*.pkl
+*.pickle
+
+# ===== 数据分析产物与本地数据 =====
+data_storage/
+visualizations/
+analysis_reports/
+generated_code/
+validation_log.json
+
+# ===== 白名单：public_data/ 是匿名化后的公开数据 =====
+!public_data/sales_anonymized.xlsx
+
+# ===== 私版交付物（含真实客户名，禁止 add -f）=====
+Sales_analysis.ipynb
+Sales_analysis_private.ipynb
+Sales_analysis.html
+output.png
+
+# ===== 密钥与本地配置 =====
+settings.json
+.env
+*.secret
+.claude/
+
+# ===== Python / 编辑器 / 系统 =====
+__pycache__/
+*.pyc
+venv/
+.venv
+.vscode/
+.idea/
+*.iml
+node_modules/
+dist/
+logs/
+*.log
+.DS_Store
+Thumbs.db
